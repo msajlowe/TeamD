@@ -16,7 +16,6 @@
 		C3A21DBE2440E0F00057E5F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A21DBC2440E0F00057E5F4 /* LaunchScreen.storyboard */; };
 		C3A21DC92440E0F00057E5F4 /* ProjectP2TeamDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A21DC82440E0F00057E5F4 /* ProjectP2TeamDTests.swift */; };
 		C3A21DD42440E0F00057E5F4 /* ProjectP2TeamDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A21DD32440E0F00057E5F4 /* ProjectP2TeamDUITests.swift */; };
-		C3A21DE22440E1BF0057E5F4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A21DE12440E1BF0057E5F4 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		C3A21DCF2440E0F00057E5F4 /* ProjectP2TeamDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectP2TeamDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A21DD32440E0F00057E5F4 /* ProjectP2TeamDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectP2TeamDUITests.swift; sourceTree = "<group>"; };
 		C3A21DD52440E0F00057E5F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3A21DE12440E1BF0057E5F4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +105,6 @@
 				C3A21DB02440E0EE0057E5F4 /* SceneDelegate.swift */,
 				C3A21DB22440E0EE0057E5F4 /* ViewController.swift */,
 				C3A21DB42440E0EE0057E5F4 /* Main.storyboard */,
-				C3A21DE12440E1BF0057E5F4 /* Launch Screen.storyboard */,
 				C3A21DBA2440E0F00057E5F4 /* Assets.xcassets */,
 				C3A21DBC2440E0F00057E5F4 /* LaunchScreen.storyboard */,
 				C3A21DBF2440E0F00057E5F4 /* Info.plist */,
@@ -240,7 +237,6 @@
 			files = (
 				C3A21DBE2440E0F00057E5F4 /* LaunchScreen.storyboard in Resources */,
 				C3A21DBB2440E0F00057E5F4 /* Assets.xcassets in Resources */,
-				C3A21DE22440E1BF0057E5F4 /* Launch Screen.storyboard in Resources */,
 				C3A21DB62440E0EE0057E5F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
