@@ -10,6 +10,7 @@
 		963DE70E92536C31688D1B0E /* libPods-ProjectP2TeamD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C3AA43848ED32AD03F2F77 /* libPods-ProjectP2TeamD.a */; };
 		B0C4BDCF245BC37200A455AD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4BDCE245BC37200A455AD /* MapViewController.swift */; };
 		B0C4BDD1245BC78800A455AD /* DriverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4BDD0245BC78800A455AD /* DriverMapViewController.swift */; };
+		B0C4BDD3245BCF1700A455AD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C4BDD2245BCF1700A455AD /* DetailsViewController.swift */; };
 		C3A21DAF2440E0EE0057E5F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A21DAE2440E0EE0057E5F4 /* AppDelegate.swift */; };
 		C3A21DB12440E0EE0057E5F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A21DB02440E0EE0057E5F4 /* SceneDelegate.swift */; };
 		C3A21DB32440E0EE0057E5F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A21DB22440E0EE0057E5F4 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		6DA358A6A3400D8BC5EA8F8A /* Pods-ProjectP2TeamD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectP2TeamD.debug.xcconfig"; path = "Target Support Files/Pods-ProjectP2TeamD/Pods-ProjectP2TeamD.debug.xcconfig"; sourceTree = "<group>"; };
 		B0C4BDCE245BC37200A455AD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B0C4BDD0245BC78800A455AD /* DriverMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverMapViewController.swift; sourceTree = "<group>"; };
+		B0C4BDD2245BCF1700A455AD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		C3A21DAB2440E0EE0057E5F4 /* ProjectP2TeamD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectP2TeamD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A21DAE2440E0EE0057E5F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3A21DB02440E0EE0057E5F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				C3A21DB22440E0EE0057E5F4 /* ViewController.swift */,
 				C3A21DB42440E0EE0057E5F4 /* Main.storyboard */,
 				B0C4BDD0245BC78800A455AD /* DriverMapViewController.swift */,
+				B0C4BDD2245BCF1700A455AD /* DetailsViewController.swift */,
 				B0C4BDCE245BC37200A455AD /* MapViewController.swift */,
 				C3A21DBA2440E0F00057E5F4 /* Assets.xcassets */,
 				C3A21DBC2440E0F00057E5F4 /* LaunchScreen.storyboard */,
@@ -340,6 +343,7 @@
 				C3A21DAF2440E0EE0057E5F4 /* AppDelegate.swift in Sources */,
 				C3A21DB12440E0EE0057E5F4 /* SceneDelegate.swift in Sources */,
 				B0C4BDD1245BC78800A455AD /* DriverMapViewController.swift in Sources */,
+				B0C4BDD3245BCF1700A455AD /* DetailsViewController.swift in Sources */,
 				B0C4BDCF245BC37200A455AD /* MapViewController.swift in Sources */,
 				C3A21DB92440E0EE0057E5F4 /* ProjectP2TeamD.xcdatamodeld in Sources */,
 			);

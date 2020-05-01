@@ -9,13 +9,19 @@
 import UIKit
 import GoogleMaps
 
+
 class DriverMapViewController: UIViewController, GMSMapViewDelegate {
+    
+    var name: String = ""
+    var price: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let camera = GMSCameraPosition.camera(withLatitude: 36.1156, longitude: -97.0584, zoom: 15.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        
+        mapView.delegate = self
         
         view = mapView
         
@@ -43,9 +49,20 @@ class DriverMapViewController: UIViewController, GMSMapViewDelegate {
     }
     
 
-    func mapView(_ mapView: GMSMapView, didTapAt cooridinate: CLLocationCoordinate2D){
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+        print("Tapped")
+        name = marker.title ?? "No Name"
+        price = marker.snippet ?? "00.00"
         
-        
+        performSegue(withIdentifier: "driverToInfo", sender: self)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let dest: DetailsViewController = segue.destination as! DetailsViewController
+        
+        dest.name = name
+        dest.price = price
+        
+    }
+    
 }
