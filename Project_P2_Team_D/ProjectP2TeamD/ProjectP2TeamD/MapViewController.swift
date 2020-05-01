@@ -19,7 +19,7 @@ class MapViewController: UIViewController {
                
                view = mapView
                
-               
+               //Adds 3 different Potential 
                let marker = GMSMarker()
                marker.position = CLLocationCoordinate2D(latitude: 36.1126, longitude: -97.0584)
                

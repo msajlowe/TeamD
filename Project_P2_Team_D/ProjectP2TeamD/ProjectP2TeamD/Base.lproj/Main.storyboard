@@ -203,7 +203,7 @@
             <objects>
                 <viewController id="6ML-ry-bcu" customClass="QLPreviewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PiC-2x-MOT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="S9u-sg-csD"/>
@@ -212,7 +212,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKH-lg-ow1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928" y="220"/>
+            <point key="canvasLocation" x="1828" y="-510"/>
+        </scene>
+        <!--Driver Map View Controller-->
+        <scene sceneID="zhJ-m5-ua1">
+            <objects>
+                <viewController id="Idm-QA-0m5" customClass="DriverMapViewController" customModule="ProjectP2TeamD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ql7-Nw-NiE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Oo3-qU-Cjn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="glR-3C-Zgb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBX-5V-P9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2554" y="-119"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Iys-pK-FyV">
@@ -309,7 +325,6 @@
                                 </state>
                                 <connections>
                                     <action selector="findRider:" destination="35J-Eg-ayo" eventType="touchUpInside" id="gth-2d-0AW"/>
-                                    <segue destination="6ML-ry-bcu" kind="show" id="dnL-sH-pRH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate / Hour: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IU-YW-DI7">
@@ -340,6 +355,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jq-pJ-gDp">
+                                <rect key="frame" x="179" y="745" width="77" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Idm-QA-0m5" kind="show" id="Ss6-2f-0qY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Dhf-5L-kn7"/>
@@ -365,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cto-oa-7tp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2745" y="220"/>
+            <point key="canvasLocation" x="2555" y="640"/>
         </scene>
     </scenes>
     <resources>
