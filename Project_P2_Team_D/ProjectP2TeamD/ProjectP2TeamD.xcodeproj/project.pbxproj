@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963DE70E92536C31688D1B0E /* libPods-ProjectP2TeamD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C3AA43848ED32AD03F2F77 /* libPods-ProjectP2TeamD.a */; };
 		C3001A20245B2272001DCE42 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3001A1F245B2272001DCE42 /* MapViewController.swift */; };
 		C3A21DAF2440E0EE0057E5F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A21DAE2440E0EE0057E5F4 /* AppDelegate.swift */; };
 		C3A21DB12440E0EE0057E5F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A21DB02440E0EE0057E5F4 /* SceneDelegate.swift */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EC251B27F37EE7FD5B6D182 /* Pods-ProjectP2TeamD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectP2TeamD.release.xcconfig"; path = "Target Support Files/Pods-ProjectP2TeamD/Pods-ProjectP2TeamD.release.xcconfig"; sourceTree = "<group>"; };
+		6DA358A6A3400D8BC5EA8F8A /* Pods-ProjectP2TeamD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectP2TeamD.debug.xcconfig"; path = "Target Support Files/Pods-ProjectP2TeamD/Pods-ProjectP2TeamD.debug.xcconfig"; sourceTree = "<group>"; };
 		C3001A1F245B2272001DCE42 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C3A21DAB2440E0EE0057E5F4 /* ProjectP2TeamD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectP2TeamD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A21DAE2440E0EE0057E5F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		C3A21DCF2440E0F00057E5F4 /* ProjectP2TeamDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectP2TeamDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A21DD32440E0F00057E5F4 /* ProjectP2TeamDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectP2TeamDUITests.swift; sourceTree = "<group>"; };
 		C3A21DD52440E0F00057E5F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C3AA43848ED32AD03F2F77 /* libPods-ProjectP2TeamD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectP2TeamD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963DE70E92536C31688D1B0E /* libPods-ProjectP2TeamD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E3446525EA235C8A931C688 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DA358A6A3400D8BC5EA8F8A /* Pods-ProjectP2TeamD.debug.xcconfig */,
+				1EC251B27F37EE7FD5B6D182 /* Pods-ProjectP2TeamD.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		24C71E1EB64410EE50907314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2C3AA43848ED32AD03F2F77 /* libPods-ProjectP2TeamD.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3A21DA22440E0EE0057E5F4 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +110,8 @@
 				C3A21DC72440E0F00057E5F4 /* ProjectP2TeamDTests */,
 				C3A21DD22440E0F00057E5F4 /* ProjectP2TeamDUITests */,
 				C3A21DAC2440E0EE0057E5F4 /* Products */,
+				0E3446525EA235C8A931C688 /* Pods */,
+				24C71E1EB64410EE50907314 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3A21DD82440E0F00057E5F4 /* Build configuration list for PBXNativeTarget "ProjectP2TeamD" */;
 			buildPhases = (
+				7218D8C747820A9D6CE5085E /* [CP] Check Pods Manifest.lock */,
 				C3A21DA72440E0EE0057E5F4 /* Sources */,
 				C3A21DA82440E0EE0057E5F4 /* Frameworks */,
 				C3A21DA92440E0EE0057E5F4 /* Resources */,
+				D2AD3805186738CC5CC25352 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7218D8C747820A9D6CE5085E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProjectP2TeamD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2AD3805186738CC5CC25352 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectP2TeamD/Pods-ProjectP2TeamD-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectP2TeamD/Pods-ProjectP2TeamD-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectP2TeamD/Pods-ProjectP2TeamD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3A21DA72440E0EE0057E5F4 /* Sources */ = {
@@ -440,6 +509,7 @@
 		};
 		C3A21DD92440E0F00057E5F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DA358A6A3400D8BC5EA8F8A /* Pods-ProjectP2TeamD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,6 +527,7 @@
 		};
 		C3A21DDA2440E0F00057E5F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EC251B27F37EE7FD5B6D182 /* Pods-ProjectP2TeamD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
