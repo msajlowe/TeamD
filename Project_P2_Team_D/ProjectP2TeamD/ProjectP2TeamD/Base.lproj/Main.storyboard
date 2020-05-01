@@ -41,7 +41,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ix5-et-3lk" kind="show" id="PSl-Ql-eIH"/>
+                                    <segue destination="FJa-Zc-h8k" kind="show" id="mEL-LS-Mwx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doN-Bu-LPG">
@@ -67,9 +67,9 @@
         <!--View Controller-->
         <scene sceneID="Qh1-Hk-ipN">
             <objects>
-                <viewController id="ix5-et-3lk" sceneMemberID="viewController">
+                <viewController id="ix5-et-3lk" customClass="ViewController" customModule="ProjectP2TeamD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oTm-hk-cCU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luxuries offered:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vH-Z4-QfE">
@@ -97,18 +97,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aF-pk-eqC">
-                                <rect key="frame" x="167" y="596" width="98" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Find Driver">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="findRider:" destination="35J-Eg-ayo" eventType="touchUpInside" id="hn3-8M-yaU"/>
-                                    <segue destination="6ML-ry-bcu" kind="show" id="DzN-wE-BvT"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSe-Yo-lne">
                                 <rect key="frame" x="63" y="376" width="46" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -169,6 +157,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qq0-qM-eou">
+                                <rect key="frame" x="158" y="595" width="98" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Find Driver">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="findRider:" destination="35J-Eg-ayo" eventType="touchUpInside" id="EYT-lf-Asi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aF-pk-eqC">
+                                <rect key="frame" x="158" y="595" width="98" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Find Driver">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="findRider:" destination="35J-Eg-ayo" eventType="touchUpInside" id="hn3-8M-yaU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="WoY-Qk-Kle"/>
@@ -180,10 +190,10 @@
             </objects>
             <point key="canvasLocation" x="1081" y="640"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Preview Controller-->
         <scene sceneID="4fS-aN-LiD">
             <objects>
-                <viewController id="6ML-ry-bcu" customClass="MapViewController" customModule="ProjectP2TeamD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6ML-ry-bcu" customClass="QLPreviewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PiC-2x-MOT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKH-lg-ow1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="236"/>
+            <point key="canvasLocation" x="1928" y="220"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Iys-pK-FyV">
@@ -333,10 +343,23 @@
             </objects>
             <point key="canvasLocation" x="1081.1594202898552" y="-119.19642857142857"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="GRY-me-oen">
+            <objects>
+                <viewController id="FJa-Zc-h8k" customClass="MapViewController" customModule="ProjectP2TeamD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dg8-oY-bOy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Wam-z8-SQo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O2j-eB-gtd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cto-oa-7tp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2745" y="220"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="DzN-wE-BvT"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2020-02-28 at 12.17.34 AM" width="166" height="154"/>
     </resources>
