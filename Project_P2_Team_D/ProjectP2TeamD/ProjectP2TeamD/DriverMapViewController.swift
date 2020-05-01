@@ -14,9 +14,25 @@ class DriverMapViewController: UIViewController, GMSMapViewDelegate {
     
     var name: String = ""
     var price: String = ""
+    var timeToTravel = 0.0
+    var customerRate = 0.0
+    var customers: [Double] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        timeToTravel = 4
+        customerRate = 1.5
+        customers.append(timeToTravel * customerRate)
+        
+        timeToTravel = 3
+        customerRate = 1.9
+        customers.append(timeToTravel * customerRate)
+        
+        timeToTravel = 8
+        customerRate = 2.3
+        customers.append(timeToTravel * customerRate)
+        
 
         let camera = GMSCameraPosition.camera(withLatitude: 36.1156, longitude: -97.0584, zoom: 15.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
@@ -32,6 +48,7 @@ class DriverMapViewController: UIViewController, GMSMapViewDelegate {
         marker.title = "Passenger A"
         marker.snippet = "Potential Earning: ##.##"
         marker.map = mapView
+        marker.icon = GMSMarker.markerImage(with: .green)
         
         let marker2 = GMSMarker()
         marker2.position = CLLocationCoordinate2D(latitude: 36.1189, longitude: -97.0586)
@@ -42,10 +59,24 @@ class DriverMapViewController: UIViewController, GMSMapViewDelegate {
         
         let marker3 = GMSMarker()
         marker3.position = CLLocationCoordinate2D(latitude: 36.1155, longitude: -97.085)
-        
+        marker3.icon = GMSMarker.markerImage(with: .yellow)
         marker3.title = "Passenger C"
         marker3.snippet = "Potential Earning: ##.##"
         marker3.map = mapView
+    }
+    
+    func createMarkers(){
+        var highest = customers[0]
+        
+        
+        for i in 0...customers.count{
+            //Method would be used to creat markers based on customer locations while comparing their price
+            
+            if(customers[i] > highest){
+                highest = customers[i]
+                //set color of marker to green
+            }
+        }
     }
     
 
