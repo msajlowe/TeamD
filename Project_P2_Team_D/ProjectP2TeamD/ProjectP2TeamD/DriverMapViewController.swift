@@ -46,23 +46,12 @@ class DriverMapViewController: UIViewController, GMSMapViewDelegate {
         marker.position = CLLocationCoordinate2D(latitude: 36.1126, longitude: -97.0584)
         
         marker.title = "Passenger A"
-        marker.snippet = "Potential Earning: ##.##"
+        marker.snippet = "Tap here to accept"
+       
         marker.map = mapView
         marker.icon = GMSMarker.markerImage(with: .green)
         
-        let marker2 = GMSMarker()
-        marker2.position = CLLocationCoordinate2D(latitude: 36.1189, longitude: -97.0586)
         
-        marker2.title = "Passenger B"
-        marker2.snippet = "Potential Earning: ##.##"
-        marker2.map = mapView
-        
-        let marker3 = GMSMarker()
-        marker3.position = CLLocationCoordinate2D(latitude: 36.1155, longitude: -97.085)
-        marker3.icon = GMSMarker.markerImage(with: .yellow)
-        marker3.title = "Passenger C"
-        marker3.snippet = "Potential Earning: ##.##"
-        marker3.map = mapView
     }
     
     func createMarkers(){
@@ -83,7 +72,7 @@ class DriverMapViewController: UIViewController, GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
         print("Tapped")
         name = marker.title ?? "No Name"
-        price = marker.snippet ?? "00.00"
+        price =  "Total Pay: ##.##"
         
         performSegue(withIdentifier: "driverToInfo", sender: self)
     }
